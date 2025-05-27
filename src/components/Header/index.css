@@ -1,0 +1,206 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 24px 32px;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #00c6b7;
+  margin: 0;
+}
+
+.logo span {
+  color: #111827;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  width: 360px;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #374151;
+}
+
+.bell-wrapper {
+  background-color: #eef2ff;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #9ca3af;
+}
+
+.bell-icon {
+  font-size: 16px;
+  color: #6366f1;
+  cursor: pointer;
+}
+
+.user-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-icon {
+  font-size: 30px;
+  color: #4b5563;
+}
+
+.plus-button {
+  width: 36px;
+  height: 36px;
+  background-color: #6366f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.plus-button:hover {
+  background-color: #4f46e5;
+}
+
+.plus-icon {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+ /* Large (≥992px) — Tablet landscape and up */
+@media (max-width: 1199px) {
+  .search-bar {
+    width: 300px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .user-icon {
+    font-size: 26px;
+  }
+
+  .plus-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .plus-icon {
+    font-size: 14px;
+  }
+}
+
+/* Medium (≥768px and <992px) — Tablet portrait */
+@media (max-width: 991px) {
+  .header {
+    padding: 20px 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .user-icons {
+    align-self: flex-end;
+  }
+}
+
+/* Small (≥576px and <768px) — Phones in landscape */
+@media (max-width: 767px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .search-bar {
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .user-icon {
+    font-size: 24px;
+  }
+
+  .plus-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .plus-icon {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small (<576px) — Phones in portrait */
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: row;
+    padding: 6px 10px;
+  }
+
+  .user-icons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .user-icon {
+    font-size: 22px;
+  }
+
+  .plus-button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .plus-icon {
+    font-size: 12px;
+  }
+}

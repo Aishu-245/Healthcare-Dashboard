@@ -1,0 +1,248 @@
+.calendar-tile {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 10px 6px;
+  width: 64px;
+  text-align: center;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.today-tile {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.light-highlight-tile {
+  background-color: #f1f5ff;
+}
+
+.inactive-tile {
+  background-color: #ffffff;
+}
+
+.calendar-day {
+  font-size: 10px;
+  font-weight: 500;
+  color: #64748b;
+  margin: 0;
+}
+
+.calendar-date {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.calendar-times {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  align-items: center;
+}
+
+.calendar-time-slot {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: #6b7280;
+  padding: 0 6px;
+  height: 20px;
+  border-radius: 12px;
+}
+
+.calendar-time-slot .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3e63dd;
+}
+
+.calendar-time-slot.empty .dot,
+.calendar-time-slot.empty .time-label {
+  display: inline;
+  color: #cbd5e1;
+}
+
+.calendar-time-slot.empty .dot {
+  background-color: #cbd5e1;
+}
+
+.time-label {
+  font-size: 10px;
+}
+
+.active-slot {
+  background-color: #3e63dd;
+  color: white;
+  font-weight: 600;
+}
+
+.active-slot .dot {
+  background-color: white;
+}
+
+.light-active-slot {
+  background-color: #d6e4ff;
+  color: #3e63dd;
+  font-weight: 500;
+}
+
+.light-active-slot .dot {
+  background-color: white;
+}
+
+.inactive-slot {
+  color: #cbd5e1;
+}
+
+.inactive-slot .dot {
+  background-color: #cbd5e1;
+}
+
+/* Extra Small Devices (≤575px) */
+@media (max-width: 575px) {
+  .calendar-tile {
+    width: 48px;
+    padding: 6px 2px;
+    gap: 2px;
+  }
+
+  .calendar-day {
+    font-size: 8px;
+  }
+
+  .calendar-date {
+    font-size: 12px;
+  }
+
+  .calendar-times {
+    gap: 3px;
+    margin-top: 3px;
+  }
+
+  .calendar-time-slot {
+    height: 16px;
+    font-size: 8px;
+    gap: 3px;
+    padding: 0 4px;
+  }
+
+  .calendar-time-slot .dot {
+    width: 4px;
+    height: 4px;
+  }
+
+  .time-label {
+    font-size: 8px;
+  }
+}
+
+/* Small Devices (576px–767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .calendar-tile {
+    width: 52px;
+    padding: 7px 4px;
+    gap: 3px;
+  }
+
+  .calendar-day {
+    font-size: 9px;
+  }
+
+  .calendar-date {
+    font-size: 13px;
+  }
+
+  .calendar-times {
+    gap: 3px;
+    margin-top: 3px;
+  }
+
+  .calendar-time-slot {
+    height: 17px;
+    font-size: 9px;
+    gap: 3px;
+    padding: 0 5px;
+  }
+
+  .calendar-time-slot .dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .time-label {
+    font-size: 9px;
+  }
+}
+
+/* Medium Devices (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .calendar-tile {
+    width: 56px;
+    padding: 8px 5px;
+    gap: 4px;
+  }
+
+  .calendar-day {
+    font-size: 9.5px;
+  }
+
+  .calendar-date {
+    font-size: 14px;
+  }
+
+  .calendar-time-slot {
+    height: 18px;
+    font-size: 9.5px;
+    gap: 4px;
+    padding: 0 6px;
+  }
+
+  .calendar-time-slot .dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .time-label {
+    font-size: 9.5px;
+  }
+}
+
+/* Large Devices (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .calendar-tile {
+    width: 60px;
+    padding: 9px 6px;
+    gap: 4px;
+  }
+
+  .calendar-day {
+    font-size: 10px;
+  }
+
+  .calendar-date {
+    font-size: 15px;
+  }
+
+  .calendar-time-slot {
+    height: 19px;
+    font-size: 10px;
+    gap: 4px;
+    padding: 0 6px;
+  }
+
+  .calendar-time-slot .dot {
+    width: 5.5px;
+    height: 5.5px;
+  }
+
+  .time-label {
+    font-size: 10px;
+  }
+}

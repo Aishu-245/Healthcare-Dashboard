@@ -1,0 +1,125 @@
+.dashboard-wrapper {
+  padding: 32px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.dashboard-week {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.health-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 130px;
+}
+
+ /* Extra Small Devices (≤767px) */
+@media (max-width: 767px) {
+  .dashboard-wrapper {
+    padding: 16px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-week {
+    font-size: 13px;
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .health-status-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
+
+/* Small Devices (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .dashboard-wrapper {
+    padding: 24px;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .health-status-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+/* Medium Devices (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-wrapper {
+    padding: 28px;
+  }
+
+  .dashboard-title {
+    font-size: 30px;
+  }
+
+  .dashboard-content {
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .health-status-list {
+    flex-direction: column;
+    width: 120px;
+    gap: 20px;
+  }
+}
+
+

@@ -1,0 +1,133 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.sidebar-item {
+  list-style: none;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #f1f5f9;
+}
+
+.sidebar-link.active {
+  background-color: #eef2ff;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.sidebar-link.active svg {
+  color: #6366f1;
+}
+
+.sidebar-icon svg {
+  font-size: 18px;
+  color: inherit;
+}
+
+.sidebar-label {
+  margin: 0;
+}
+
+.setting-item {
+  margin-top: auto;
+}
+
+/* Large (≤1199px) — Tablet landscape */
+@media (max-width: 1199px) {
+  .sidebar-link {
+    font-size: 14px;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .sidebar-icon svg {
+    font-size: 16px;
+  }
+}
+
+/* Medium (≤991px) — Tablet portrait */
+@media (max-width: 991px) {
+  .sidebar {
+    width: 72px;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .sidebar-label {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    padding: 12px;
+  }
+}
+
+/* Small (≤767px) — Phone landscape */
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    border-top: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+
+  .sidebar-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .setting-item {
+    margin-top: 0;
+  }
+
+  .sidebar-link {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .sidebar-label {
+    display: block;
+  }
+}
+
+/* Extra Small (≤575px) — Phone portrait */
+@media (max-width: 575px) {
+  .sidebar-link {
+    font-size: 11px;
+  }
+
+  .sidebar-icon svg {
+    font-size: 16px;
+  }
+}

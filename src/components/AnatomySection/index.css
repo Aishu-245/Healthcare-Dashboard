@@ -1,0 +1,206 @@
+.anatomy-wrapper {
+  position: relative;
+  width: 220px;
+  height: 400px;
+  margin: auto;
+}
+
+.anatomy-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.scanner {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(115, 103, 240, 0.4);
+  box-shadow: 0 0 12px 6px rgba(115, 103, 240, 0.4);
+}
+
+.glow-chest {
+  top: 90px;
+  left: 120px;
+}
+
+.glow-leg {
+  bottom: 38px;
+  left: 70px;
+  border: dashed;
+}
+
+.label {
+  position: absolute;
+  background-color: #7367f0;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.label-heart {
+  top: 110px;
+  left: 140px;
+}
+
+.label-leg {
+  bottom: 20px;
+  left: 18px;
+}
+
+/* Large (≤1199px) */
+@media (max-width: 1199px) {
+  .anatomy-wrapper {
+    width: 200px;
+    height: 360px;
+  }
+
+  .scanner {
+    width: 50px;
+    height: 18px;
+  }
+
+  .glow-chest {
+    top: 80px;
+    left: 105px;
+  }
+
+  .glow-leg {
+    bottom: 32px;
+    left: 65px;
+  }
+
+  .label {
+    font-size: 9px;
+    padding: 2px 7px;
+  }
+
+  .label-heart {
+    top: 98px;
+    left: 125px;
+  }
+
+  .label-leg {
+    bottom: 16px;
+    left: 16px;
+  }
+}
+
+/* Medium (≤991px) */
+@media (max-width: 991px) {
+  .anatomy-wrapper {
+    width: 180px;
+    height: 320px;
+  }
+
+  .scanner {
+    width: 45px;
+    height: 16px;
+  }
+
+  .glow-chest {
+    top: 70px;
+    left: 95px;
+  }
+
+  .glow-leg {
+    bottom: 28px;
+    left: 58px;
+  }
+
+  .label {
+    font-size: 8.5px;
+    padding: 2px 6px;
+  }
+
+  .label-heart {
+    top: 88px;
+    left: 112px;
+  }
+
+  .label-leg {
+    bottom: 14px;
+    left: 12px;
+  }
+}
+
+/* Small (≤767px) */
+@media (max-width: 767px) {
+  .anatomy-wrapper {
+    width: 160px;
+    height: 290px;
+  }
+
+  .scanner {
+    width: 40px;
+    height: 14px;
+  }
+
+  .glow-chest {
+    top: 60px;
+    left: 85px;
+  }
+
+  .glow-leg {
+    bottom: 24px;
+    left: 50px;
+  }
+
+  .label {
+    font-size: 8px;
+    padding: 1px 6px;
+  }
+
+  .label-heart {
+    top: 78px;
+    left: 98px;
+  }
+
+  .label-leg {
+    bottom: 12px;
+    left: 10px;
+  }
+}
+
+/* Extra Small (≤575px) */
+@media (max-width: 575px) {
+  .anatomy-wrapper {
+    width: 140px;
+    height: 250px;
+  }
+
+  .scanner {
+    width: 36px;
+    height: 12px;
+  }
+
+  .glow-chest {
+    top: 50px;
+    left: 70px;
+  }
+
+  .glow-leg {
+    bottom: 20px;
+    left: 45px;
+  }
+
+  .label {
+    font-size: 7.5px;
+    padding: 1px 5px;
+  }
+
+  .label-heart {
+    top: 66px;
+    left: 84px;
+  }
+
+  .label-leg {
+    bottom: 10px;
+    left: 8px;
+  }
+}

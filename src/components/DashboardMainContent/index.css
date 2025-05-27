@@ -1,0 +1,171 @@
+.dashboard-main-container {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.dashboard-right-panel {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f9fafc;
+  padding: 22px;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  width: 400px;
+  max-width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-month {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.calendar-navigation-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.calendar-week-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.calendar-appointments-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.calendar-schedule-day {
+  margin-top: 16px;
+}
+
+.calendar-day-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.calendar-appointment-bubbles {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+/* Extra Small Devices (≤767px) */
+@media (max-width: 767px) {
+  .dashboard-main-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .dashboard-right-panel {
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .calendar-month {
+    font-size: 16px;
+  }
+
+  .calendar-navigation-icons {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .calendar-appointments-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calendar-appointment-bubbles {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Small Devices (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .dashboard-main-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .dashboard-right-panel {
+    width: 100%;
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .calendar-week-grid {
+    gap: 10px;
+  }
+
+  .calendar-appointments-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .calendar-appointment-bubbles {
+    flex-wrap: wrap;
+  }
+}
+
+/* Medium Devices (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-main-container {
+    flex-direction: row;
+    gap: 28px;
+  }
+
+  .dashboard-right-panel {
+    width: 340px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .calendar-week-grid {
+    gap: 10px;
+  }
+
+  .calendar-appointments-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .calendar-appointment-bubbles {
+    flex-wrap: wrap;
+  }
+}
+
+
